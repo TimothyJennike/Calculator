@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: black 5px 5px 5px;
+
+}
+#display {
+    text-align: right;
+    height: 80px;
+    line-height: 80px;
+    padding: 18px 9px;
+    font-size: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.buttons > div {
+    border-top: 1px solid black ;
+    border-right: 1px solid black;
+}
+
+.button {
+    border: 0.5px solid black;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: blueviolet;
+    color: white;
+}
+
+.buttons :hover {
+    background-color: yellowgreen;
+    color: white;
+
+}
