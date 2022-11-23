@@ -6,18 +6,29 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
+    background-image: url(https://i.postimg.cc/hhRG66Bs/pixel-pink-sky.jpg);
+    background-size: cover;
+}
+
+.calculator {
     max-width: 400px;
     margin: 10vh auto 0 auto;
-    box-shadow: black 5px 5px 5px 5px;
-
+    box-shadow: black 5px 5px 5px ;
+    background-color: white;
 }
+
 #display {
     text-align: right;
     height: 80px;
     line-height: 80px;
     padding: 18px 9px;
     font-size: 50px;
+    background-color: white;
+    border: 2px solid black;
+    background-image: url(https://i.postimg.cc/6qJkVXw9/hk.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .buttons {
@@ -25,6 +36,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background-color: pink;
 }
 
 .buttons > div {
@@ -37,16 +49,30 @@
     line-height: 100px;
     text-align: center;
     font-size: 25px;
-    cursor: pointer;
+    border-radius: 15px;
+    cursor:grab;
 }
 
 #equal {
-    background-color: blueviolet;
+    background-color:palevioletred;
+    color: black;
+    grid-column: span 3; 
+}
+
+#delete {
+    background-image: url(https://i.postimg.cc/DwJppyFQ/hello-kitty.jpg);
+    background-size: cover;
+}
+
+.buttons :hover{
+    background-color: pink;
     color: white;
 }
 
-.buttons :hover {
-    background-color: yellowgreen;
-    color: white;
-
+@media screen and (max-width: 720px) {
+    .calculator {
+        width: 100%;
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }  
 }
