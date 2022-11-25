@@ -9,26 +9,26 @@
 </head>
 <body>
     <div class="calculator">
-        <div id="display"></div>
+        <input type="text" id="Display-bar">
         <div class="buttons">
-            <button class="button">AC</button>
-            <button class="button">/</button>
-            <button class="button">*</button>
-            <button class="button">+</button>
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">-</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">.</button>
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">0</button>
-            <button id="equal" class="button">=</button>
-            <button id="delete" class="button">Del</button>
+            <button class="button" type="button" onclick="clr()">AC</button>
+            <button class="button" type="button" onclick="operators('/')">/</button>
+            <button class="button" type="button" onclick="operators('*')">*</button>
+            <button class="button" type="button" onclick="operators('+')">+</button>
+            <button class="button" type="button" onclick="numbers('7')" >7</button>
+            <button class="button" type="button" onclick="numbers('8')">8</button>
+            <button class="button" type="button" onclick="numbers('9')">9</button>
+            <button class="button" type="button" onclick="operators('-')">-</button>
+            <button class="button" type="button" onclick="numbers('4')">4</button>
+            <button class="button" type="button" onclick="numbers('5')">5</button>
+            <button class="button" type="button" onclick="numbers('6')">6</button>
+            <button id="decimal" class="button" onclick="decimal('.')">.</button>
+            <button class="button" type="button" onclick="numbers('1')">1</button>
+            <button class="button" type="button" onclick="numbers('2')">2</button>
+            <button class="button" type="button" onclick="numbers('3')">3</button>
+            <button class="button" type="button" onclick="numbers('0')">0</button>
+            <button id="equal" class="button" onclick="equal()">=</button>
+            <button id="delete" class="button" onclick="del()">Del</button>
         </div>
     </div>
     

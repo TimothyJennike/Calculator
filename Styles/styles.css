@@ -14,16 +14,18 @@ body {
 .calculator {
     max-width: 400px;
     margin: 10vh auto 0 auto;
-    box-shadow: black 5px 5px 5px ;
-    background-color: white;
+    /* background-color: white; */
+    /* box-shadow: 5px 5px 5px black; */
 }
 
-#display {
+#Display-bar {
     text-align: right;
-    height: 80px;
+    height: 90px;
+    width: 54vh;
     line-height: 80px;
-    padding: 18px 9px;
+    /* padding: 18px 9px; */
     font-size: 50px;
+    border-radius: 20px;
     background-color: white;
     border: 2px solid black;
     background-image: url(https://i.postimg.cc/6qJkVXw9/hk.webp);
@@ -36,7 +38,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
-    background-color: pink;
+    border: #d099e6;
+    /* background-color: pink; */
+    /* background-color: #d099e6; */
 }
 
 .buttons > div {
@@ -71,8 +75,17 @@ body {
 
 @media screen and (max-width: 720px) {
     .calculator {
-        width: 100%;
         margin-left: 10px; 
         margin-right: 10px; 
-    }  
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+    #delete {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    #Display-bar {
+        width: 100%;
+    }
 }

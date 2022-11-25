@@ -1,22 +1,44 @@
-let display = document.getElementById('display');
+let output = document.getElementById('Display-bar');
+let allowComa = true;
 
-const buttons = Array.from(document.getElementsByClassName('button'));
+function numbers(anyVal) {
+    output.value = output.value + anyVal;
+    allowComa = true;
+}
 
-buttons.map( button => {
-    button.addEventListener('click', (e) => {
-        switch(e.target.innerText){
-            case 'AC':
-                display.innerText = '';
-                break;
-            case '=':
-                    display.innerText = eval(display.innerText);
-                break;
-            case 'Del':
-                   display.innerText = display.innerText.slice(0, -1);
-                break;
-            default:
-                display.innerText += e.target.innerText;
-        }
-    });
-});
+function operators(anyVal) {
+    output.value = output.value + anyVal;
+    allowComa = true
+}
 
+//To allow only one decimal to be placed 
+function decimal(anyVal) {
+    if(allowComa === true) {
+        output.value = output.value + anyVal;
+        allowComa = false;
+    }
+}
+
+// Delete function
+function del() {
+    output.value = output.value.slice(0, -1);
+    allowComa = true;
+}
+
+//Equal function
+function equal() {
+    try {
+        output.value = eval(output.value)
+    }
+    catch(err) {
+        output.value = "ERROR"
+    }
+    allowComa = true; 
+}
+
+//AC function
+function clr() {
+    output.value = "";
+    output.value = output.value + anyVal;
+    allowComa = true;
+}
