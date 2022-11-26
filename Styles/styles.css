@@ -21,8 +21,9 @@ body {
 #Display-bar {
     text-align: right;
     height: 90px;
-    width: 54vh;
+    width: 53.5vh;
     line-height: 80px;
+    box-shadow: inset 3px 3px 3px;
     /* padding: 18px 9px; */
     font-size: 50px;
     border-radius: 20px;

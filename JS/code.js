@@ -1,20 +1,20 @@
 let output = document.getElementById('Display-bar');
 let allowComa = true;
 
-function numbers(anyVal) {
-    output.value = output.value + anyVal;
+function numbers(yourVal) {
+    output.value = output.value + yourVal;
     allowComa = true;
 }
 
-function operators(anyVal) {
-    output.value = output.value + anyVal;
+function operators(yourVal) {
+    output.value = output.value + yourVal;
     allowComa = true
 }
 
 //To allow only one decimal to be placed 
-function decimal(anyVal) {
+function decimal(yourVal) {
     if(allowComa === true) {
-        output.value = output.value + anyVal;
+        output.value = output.value + yourVal;
         allowComa = false;
     }
 }
@@ -39,6 +39,6 @@ function equal() {
 //AC function
 function clr() {
     output.value = "";
-    output.value = output.value + anyVal;
+    output.value = output.value + yourVal;
     allowComa = true;
 }
